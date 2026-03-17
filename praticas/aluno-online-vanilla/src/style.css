@@ -1,8 +1,6 @@
 * {
     margin: 0;
-    margin-top: 10px;
-    padding: 1.5px;
-    align-items: center;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -20,52 +18,47 @@ body {
     height: 100vh;
 }
 
+header {
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+
 main {
     display: flex;
     flex: 1;
     flex-direction: column;
-    padding: 0 16px;
-}
-
-header {
-    display: flex;
-    padding: 20px;
-    align-items: center;
-    height: 20px;
-    width: 100%;
-    justify-content: space-between;
+    padding: 0 40px;
 }
 
 img {
     height: 60px;
     width: 60px;
-    margin: 16px auto;
 }
 
 .card-mural {
     width: 300px;
-    border: 1px solid #dcdcdc;
+    border: 1px solid var(--cor-fundo);
     border-radius: 10px;
     background: #d9d9d9;
     margin-top: 10px;
-    padding: 0;
 }
 
-.card-mural header {
-    justify-content:flex-start;
-    padding: 6px;
-    font-weight: bold;
-    border-radius: 10px 10px 0 0;
+h3 {
+    padding: 10px;
 }
 
-.card-mural p {
+p {
     background-color: #FFFF;
     padding: 10px;
 }
 
 @media (min-width: 768px) {
     main {
-        margin: 64px auto;
+        margin: 64px;
         max-width: 400px;
     }
 }
