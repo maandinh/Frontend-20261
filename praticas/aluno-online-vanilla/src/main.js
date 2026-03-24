@@ -31,5 +31,5 @@ botao.addEventListener("click", function (e) {e.preventDefault();
 
   if (temErro) return;
 
-  console.log("Formulário válido");
+ window.location.href = "/index.html";
 });

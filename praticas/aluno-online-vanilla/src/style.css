@@ -18,13 +18,14 @@
     flex-direction: column;
     height: 100vh;
   }
-  
+    
   main {
     display: flex;
-    flex: 1;
     flex-direction: column;
     justify-content: center;
     padding: 0 16px;
+    border-radius: 8px;
+    background: #fff
   }
   
   img {
@@ -45,6 +46,7 @@
   
   input {
     line-height: 1.6;
+    width: 100%; 
     padding: 0.5rem; /* 1rem 16pt => 8pt */
     border: 1px solid var(--cor-texto);
     border-radius: 8px;
@@ -53,8 +55,10 @@
   
   button {
     padding: 0.5rem;
+    width: 100%;
     line-height: 1.6;
     border: none;
+    margin-bottom: 10px;
     border-radius: 8px;
     background: #d9d9d9;;
   }
