@@ -2,100 +2,105 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-:root {
+  }
+  
+  :root {
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 2rem;
+    font-size: 1rem;
     font-weight: 400;
-    
+
     --cor-fundo: #e9e9e9;
     --cor-texto: #303030;
-}
-
-body {
+  }
+  
+  body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-}
-
-.sidebar {
-    display: none;
-    padding: 0 40px;
-    background: #d9d9d9;
-}
-
-.topbar {
-    width: 100%;
-}
-
-nav ul {
-    list-style: disc;
-    padding-left: 10px;
-}
-
-nav li {
-    margin: 20px 0;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-header {
+  }
+    
+  main {
     display: flex;
-    padding: 40px;
-    justify-content: space-between;
-    height: 100px;
-    align-items: center;
-}
-
-main {
-    display: flex;
-    flex: 1;
     flex-direction: column;
-    padding: 0 40px;
+    justify-content: center;
+    padding: 0 16px;
+    border-radius: 8px;
+    background: #fff
+  }
+  
+  img {
+    height: 128px;
+    width: 128px;
+    margin: 16px auto;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  label {
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  input {
+    line-height: 1.6;
+    width: 100%; 
+    padding: 0.5rem; /* 1rem 16pt => 8pt */
+    border: 1px solid var(--cor-texto);
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+  
+  button {
+    padding: 0.5rem;
     width: 100%;
-}
+    line-height: 1.6;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background: #d9d9d9;;
+  }
 
-img {
-    height: 60px;
-    width: 60px;
-}
-
-.card-mural {
-    border: 1px solid var(--cor-fundo);
-    border-radius: 10px;
-    background: #d9d9d9;
-    margin-top: 10px;
-}
-
-h3 {
+  .footer {
+    margin-top: 0;
+    text-align: center;
     padding: 10px;
-}
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    padding: 0.5rem;
+    background-color: var(--cor-fundo);
+  }
+  
+  header > h1 {
+     margin: 0;    
+  }
+  
+  header > img {
+      height: 32px;
+      width: 32px;
+  }
 
-p {
-    background-color: #FFFF;
-    padding: 10px;
-}
-
-
-@media (width >= 768px) {
+  h5 {
+    color: #F00
+  }
+  
+  @media (width >= 768px) {
     body {
-        display: grid;
-        grid-template-columns: 250px 1fr;
-        grid-template-rows: auto 1fr;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-
-    .sidebar {
-        display: block;
-        width: 278px;
-        grid-row: 1 / 3;
-    }
-
-    .topbar {
-        grid-column: 2;
-    }
-
+    
     main {
-        grid-column: 2;
+      border: 1px solid var(--cor-texto);
+      margin: 50px 0;
+      width: 350px;
     }
-}
+  }
+  
