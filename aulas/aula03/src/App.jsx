@@ -1,59 +1,23 @@
-import logo from './assets/learn.svg'
-import avatar from './assets/avatar.svg'
+import Dashboard from "./pages/Dashboard";
+import Boletos from "./pages/Boletos";
+import Faltas from "./pages/Faltas";
+import Notas from "./pages/Notas";
+import Requerimentos from "./pages/Requerimentos";
 
 
-function App () {
-  return <div className='flex flex-col md:flex-row'>
-   <aside className='hidden md:block bg-gray-300'>
-    <header className='flex flex-row'>
-      <img src={logo} alt="imagem da logo" />
-      <h1>Aluno Online</h1>
-      <nav>
-        <ul>
-          <li>Dashboard</li>
-          <li>Notas</li>
-          <li>Faltas</li>
-          <li>Boletos</li>
-          <li>Requerimentos</li>
-          <li>Sair</li>
-        </ul>
-      </nav>
-    </header>
-   </aside>
-   <main>
-    <header>
-      <h1>Olá Aluno</h1>
-      <img src={avatar} alt="imagem do avatar" />
-      </header>
-      <h2>Bem-vindo ao portal do aluno</h2>
-      <section>
-        <article>
-          <h3>Mural de Avisos</h3>
-          <ul>
-            <li>Incrição para o projeto de extensão</li>
-            <li>Elição para representante de turma</li>
-            <li></li>
-          </ul>
-        </article>
-        <article>
-          <h3>Calendário Acadêmico</h3>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </article>
-        <article>
-          <h3>Minhas Disciplinas</h3>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </article>
-      </section>
-   </main>
-  </div>
+function App() {
+  const pagina = 1;
+
+
+  switch(pagina) {
+    case 1: return <Dashboard />
+    case 2: return <Boletos />
+    case 3: return <Faltas />
+    case 4: return <Notas />
+    case 5: return <Requerimentos />
+ }
 }
 
+
 export default App;
+
