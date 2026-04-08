@@ -29,17 +29,3 @@
     background: #d9d9d9;
 }
 
-@media (width >= 768px) {
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    main {
-      border: 1px solid var(--cor-texto);
-      margin: 50px 0;
-      width: 350px;
-    }
-  }
-  

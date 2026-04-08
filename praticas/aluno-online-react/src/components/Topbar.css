@@ -16,16 +16,20 @@
   header {
     display: flex;
     align-items: center;
-    height: 56px;
-    padding: 0.5rem;
-    background-color: var(--cor-fundo);
+    height: 10px;
+
   }
   
   header > h1 {
-     margin: 0;    
+    margin: 0px;    
   }
   
   header > img {
-      height: 32px;
-      width: 32px;
+      height: 50px;
+      width: 50px;
   }
+
+.topbar,main {
+  max-width: 800px;
+  padding: 30px; 
+}

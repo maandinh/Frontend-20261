@@ -14,7 +14,7 @@ function Dashboard() {
             Eleição para representante de turma
           </p>
         </section>
-  
+
         <section className="card-mural">
           <h3>Calendário Acadêmico</h3>
           <p>
