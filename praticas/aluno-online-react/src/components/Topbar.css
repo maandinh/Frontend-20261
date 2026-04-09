@@ -15,21 +15,23 @@
 
   header {
     display: flex;
-    align-items: center;
     height: 10px;
 
   }
   
   header > h1 {
-    margin: 0px;    
+    margin: 0px;   
+    padding: 0px; 
+   
   }
   
   header > img {
       height: 50px;
       width: 50px;
+      
   }
 
 .topbar,main {
   max-width: 800px;
-  padding: 30px; 
+  padding: 30px 15px; 
 }

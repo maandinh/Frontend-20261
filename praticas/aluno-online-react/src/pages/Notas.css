@@ -26,8 +26,8 @@
   padding: 40px 15px;
 }
 
-.subtitulo {
-  padding: 30px 15px;
+.notas .subtitulo {
+  padding: 40px 15px;
 }
 
 h2 {
@@ -38,7 +38,7 @@ h2 {
   padding: 10px;
 }
 
-.card {
+.notas .card { 
   background-color: #eaeaea;
   margin: 15px 15px 40px;
   border-radius: 10px;

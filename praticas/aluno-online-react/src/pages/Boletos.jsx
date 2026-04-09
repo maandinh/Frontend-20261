@@ -20,12 +20,8 @@ function Boletos() {
 ];
 
     return (
-    <>
-      <header className="titulo">
-        <h1>Meus Boletos</h1>
-        <img src="avatar.svg" alt="Ícone do avatar" />
-      </header>
-
+     <div className="boletos">
+      
       <header className="subtitulo">
         <h2>Histórico de Pagamentos</h2>
       </header>
@@ -51,7 +47,7 @@ function Boletos() {
           </tbody>
         </table>
       </section>
-    </>
+    </div>
   );
 }
 

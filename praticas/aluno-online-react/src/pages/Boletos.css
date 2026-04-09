@@ -10,22 +10,9 @@
     font-weight: 400;
   }
 
-  header {
-    display: flex;
-    align-items: center;
-
-  }
-  
-  header > img {
-      height: 50px;
-      width: 50px;
-  }
-.titulo {
-    padding: 40px 15px;
-}
-
-.subtitulo {
-  padding: 30px 15px;
+.boletos .subtitulo {
+  padding: 30px 10px;
+  margin-top: 60px;
 }
 
 h2 {

@@ -18,12 +18,7 @@ function Requerimentos() {
 
   return (
     <>
-      <header className="titulo">
-        <h1>Meus Requerimentos</h1>
-        <img src="avatar.svg" alt="Ícone do avatar" />
-      </header>
-
-      <header className="subtitulo">
+        <header className="subtitulo">
         <h2>Faça solicitações online para a secretaria</h2>
       </header>
 

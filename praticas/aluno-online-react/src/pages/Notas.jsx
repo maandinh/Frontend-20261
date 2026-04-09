@@ -18,14 +18,9 @@ function Notas() {
       { nome: "Gerenciamento de Projetos", a1: "7.4", a2: "7.1", a3: "", mencao: "MS" }
     ]
   }
-];
+]; 
     return (
     <div className="notas"> 
-    
-      <header className="titulo">
-        <h1>Minhas Notas</h1>
-        <img src="avatar.svg" alt="Ícone do avatar" />
-      </header>
 
       <header className="subtitulo">
         <h2>Histórico de Notas por Semestre</h2>
