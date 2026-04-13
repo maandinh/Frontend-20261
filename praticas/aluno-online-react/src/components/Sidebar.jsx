@@ -1,25 +1,16 @@
-import "./Sidebar.css";
+import logo from '../assets/avatar.svg';
+import Menu from './Menu';
 
 function Sidebar() {
     return (
-      <aside className="sidebar">
-        <header className="sidebar-header">
-          <img src="learn.svg" alt="Ícone de capelo" />
-          <h3>Aluno Online</h3>
-        </header>
-  
-        <nav>
-          <ul>
-            <li>Dashboard</li>
-            <li>Notas</li>
-            <li>Faltas</li>
-            <li>Boletos</li>
-            <li>Requerimentos</li>
-            <li>Sair</li>
-          </ul>
-        </nav>
+        <aside className='hidden md:block bg-gray-300'>
+      <header className='flex flex-row'>
+        <img src={logo} alt="imagem logo" />
+        <h1>Aluno Online</h1>
+      </header>
+      <Menu />
       </aside>
     );
-  }
-  
-  export default Sidebar;
+}
+
+export default Sidebar;

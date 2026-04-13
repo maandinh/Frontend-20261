@@ -1,53 +1,21 @@
-import Sidebar from "./components/Sidebar";
-import Topbar from "./components/Topbar";
-import Dashboard from "./pages/Dashboard";
-import Faltas from "./pages/Faltas";
-import Notas from "./pages/Notas";
-import Boletos from "./pages/Boletos";
-import Requerimentos from "./pages/Rquerimentos"
+import Dashboard from './pages/Dashboard';
+import Notas from './pages/Notas';
+import Faltas from './pages/Faltas';
+import Boletos from './pages/Boletos';
+import Requerimentos from './pages/Requerimentos';
 
 function App() {
-  const pagina = 4;
+  const pagina = 1
 
-  let titulo = "";
-  let Conteudo;
-
-  switch (pagina) {
-    case 1:
-      titulo = "Olá, Aluno!";
-      Conteudo = <Dashboard />;
-      break;
-    case 2:
-      titulo = "Minhas Faltas";
-      Conteudo = <Faltas />;
-      break;
-    case 3:
-      titulo = "Minhas Notas";
-      Conteudo = <Notas />;
-      break;
-       case 4:
-      titulo = "Meus Boletos";
-      Conteudo = <Boletos />;
-      break;
-       case 5:
-      titulo = "Meus Requerimentos";
-      Conteudo = <Requerimentos />;
-      break;
-    default:
-      titulo = "Dashboard";
-      Conteudo = <Dashboard />;
+  switch(pagina) {
+    case 1: return <Dashboard/>
+    case 2: return <Notas/>
+    case 3: return <Faltas/>
+    case 4: return <Boletos/>
+    case 5: return <Requerimentos/>
+    default: return <></>
   }
 
-  return (
-    <div className="layout">
-      <Sidebar />
-
-      <div className="content">
-        <Topbar titulo={titulo} />
-        {Conteudo}
-      </div>
-    </div>
-  );
 }
 
 export default App;

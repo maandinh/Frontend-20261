@@ -2,15 +2,15 @@ import Main from "../components/Main";
 import Sidebar from "../components/Sidebar";
 import Tabela from "../components/Tabela";
 
-function Boletos() {
+function Requerimentos() {
     return (
         <>
             <Sidebar />
-            <Main titulo="Meus Boletos" subtitulo="Histórico de Pagamentos">
+            <Main titulo="Meus Requerimentos" subtitulo="Faça solicitações online para a Secretaria">
                 <Tabela />
             </Main>
         </>
     );
 }
 
-export default Boletos;
+export default Requerimentos;

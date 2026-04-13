@@ -1,12 +1,12 @@
-import "./Topbar.css";
+import user from '../assets/avatar.svg';
 
-function Topbar({ titulo }) {
-  return (
-    <header className="topbar">
-      <h1>{titulo}</h1>
-      <img src="avatar.svg" alt="Avatar" />
-    </header>
-  );
+function Topbar(props) {
+    return (
+        <header>
+        <h1>{props.titulo}</h1>
+        <img src={user} alt="imagem avatar" />
+      </header>
+    );
 }
 
 export default Topbar;
