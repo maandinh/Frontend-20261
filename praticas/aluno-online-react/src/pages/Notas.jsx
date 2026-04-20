@@ -29,14 +29,14 @@ function Notas() {
 ]
 
     return (
-        <>
+        <div className="flex h-screen bg-gray-50">
             <Sidebar />
             <Main titulo="Minhas Notas" subtitulo="Histórico de Notas por Semestre">
                 <Tabela titulo="2026.1" colunas={colunas} dados={notas[0]}/>
                 <Tabela titulo="2025.2" colunas={colunas} dados={notas[1]}/>
                 <Tabela titulo="2025.1" colunas={colunas} dados={notas[2]}/>
             </Main>
-        </>
+        </div>
     );
 }
 
