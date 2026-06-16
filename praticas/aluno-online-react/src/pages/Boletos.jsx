@@ -1,16 +1,14 @@
 import Main from "../components/Main";
-import Sidebar from "../components/Sidebar";
 import Tabela from "../components/Tabela";
 
 function Boletos() {
     return (
         <div className="flex h-screen bg-gray-50">
-            <Sidebar />
-            <Main 
-                titulo="Meus Boletos" 
+            <Main
+                titulo="Meus Boletos"
                 subtitulo="Histórico de Pagamentos"
             >
-                <Tabela 
+                <Tabela
                     colunas={["Vencimento", "Valor R$", "Situação"]}
                     dados={[
                         ["19/01/2026", "500,00", "Pago"],

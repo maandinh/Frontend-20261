@@ -1,0 +1,11 @@
+{
+  "requerimentos": [
+    {
+      "id": 1,
+      "tipo": "Revisão de Menção",
+      "descricao": "Solicitação de revisão da nota final.",
+      "data": "2026-05-26",
+      "situacao": "Pendente"
+    }
+  ]
+}
