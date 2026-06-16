@@ -1,17 +1,17 @@
 import Main from "../components/Main";
-import Sidebar from "../components/Sidebar";
 import Tabela from "../components/Tabela";
+
 
 function Faltas() {
     return (
         <div className="flex h-screen bg-gray-50">
-            <Sidebar />
-            <Main 
-                titulo="Minhas Faltas" 
+            <Main
+                titulo="Minhas Faltas"
                 subtitulo="Histórico de Faltas por Semestre"
             >
 
-                <Tabela 
+
+                <Tabela
                     titulo="2026.1"
                     colunas={["Disciplina", "Total de Faltas", "% de Presença"]}
                     dados={[
@@ -21,7 +21,8 @@ function Faltas() {
                     ]}
                 />
 
-                <Tabela 
+
+                <Tabela
                     titulo="2025.2"
                     colunas={["Disciplina", "Total de Faltas", "% de Presença"]}
                     dados={[
@@ -31,7 +32,8 @@ function Faltas() {
               ]}
                 />
 
-                <Tabela 
+
+                <Tabela
                     titulo="2025.1"
                     colunas={["Disciplina", "Total de Faltas", "% de Presença"]}
                 />
@@ -39,5 +41,6 @@ function Faltas() {
         </div>
     );
 }
+
 
 export default Faltas;
