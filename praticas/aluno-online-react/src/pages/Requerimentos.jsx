@@ -1,28 +1,58 @@
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
 import Main from "../components/Main";
-import Sidebar from "../components/Sidebar";
 import Tabela from "../components/Tabela";
 
+import { listarRequerimentos } from "../services/requerimentoService";
+
 function Requerimentos() {
-    return (
-        <div className="flex h-screen bg-gray-50">
-            <Sidebar />
-            <Main 
-                titulo="Meus Requerimentos" 
-                subtitulo="Faça solicitações online para a Secretaria"
-            >
-                <Tabela 
-                    colunas={["Tipo de Requerimento", "Data de Solicitação", "Situação"]}
-                    dados={[
-                        ["Revisão de Menção", "15/12/2025", "Indeferido"],
-                        ["Dispensa de Disciplina", "12/06/2025", "Indeferido"],
-                        ["Trancamento de Matrícula", "05/01/2024", "Deferido"],
-                        ["Mudança de Turno", "10/10/2023", "Deferido"],
-                        ["Renovação de Matrícula", "20/02/2023", "Deferido"]
-                    ]}
-                />
-            </Main>
+  const [requerimentos, setRequerimentos] = useState([]);
+
+  useEffect(() => {
+    async function carregarDados() {
+      try {
+        const dados = await listarRequerimentos();
+
+        setRequerimentos(dados);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+    carregarDados();
+  }, []);
+
+  return (
+    <div className="flex h-screen bg-gray-50">
+      <Main
+        titulo="Meus Requerimentos"
+        subtitulo="Faça solicitações online para a Secretaria"
+      >
+        <div className="flex justify-end">
+          <Link
+            to="/requerimentos/novo"
+            className="bg-purple-600 text-white px-4 py-2 rounded"
+          >
+            ➕ Novo Requerimento
+          </Link>
         </div>
-    );
+
+        <Tabela
+          colunas={[
+            "Tipo de Requerimento",
+            "Data de Solicitação",
+            "Situação",
+          ]}
+          dados={requerimentos.map((item) => [
+            item.tipo,
+            item.data,
+            item.situacao,
+          ])}
+        />
+      </Main>
+    </div>
+  );
 }
 
 export default Requerimentos;

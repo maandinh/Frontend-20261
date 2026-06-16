@@ -2,6 +2,9 @@ function Tabela({ titulo, colunas = [], dados = [] }) {
   return (
     <div className="rounded-2xl shadow-sm border border-gray-100 overflow-hidden bg-white">
 
+
+
+
       {titulo && (
         <div className="bg-gray-100 px-6 py-4 border-b border-gray-200">
           <h3 className="text-lg font-semibold text-gray-800 text-center">
@@ -10,8 +13,14 @@ function Tabela({ titulo, colunas = [], dados = [] }) {
         </div>
       )}
 
+
+
+
       <div className="overflow-x-auto">
         <table className="w-full table-auto text-xs text-gray-700">
+
+
+
 
           <thead className="bg-gray-100 border-b border-gray-200">
             <tr>
@@ -19,8 +28,8 @@ function Tabela({ titulo, colunas = [], dados = [] }) {
                 <th
                   key={index}
                   className={`px-4 py-3 font-semibold text-gray-700
-                    ${index === 0 
-                        ? "text-left w-[48%]" 
+                    ${index === 0
+                        ? "text-left w-[48%]"
                         : "text-center w-[26%]"
                        }
                   `}
@@ -31,6 +40,9 @@ function Tabela({ titulo, colunas = [], dados = [] }) {
             </tr>
           </thead>
 
+
+
+
           <tbody className="divide-y divide-gray-100">
             {dados.map((linha, i) => (
               <tr key={i} className="hover:bg-gray-50">
@@ -38,8 +50,8 @@ function Tabela({ titulo, colunas = [], dados = [] }) {
                   <td
                     key={j}
                     className={`px-4 py-3
-                      ${j === 0 
-                          ? "text-left font-medium text-gray-800 break-words" 
+                      ${j === 0
+                          ? "text-left font-medium text-gray-800 break-words"
                           : "text-center text-gray-700 font-medium"
                        }
                     `}
