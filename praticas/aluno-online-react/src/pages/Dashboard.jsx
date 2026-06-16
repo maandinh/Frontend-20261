@@ -1,7 +1,6 @@
 import React from 'react';
 import Card from '../components/Card.jsx';
 import Main from '../components/Main.jsx';
-import Sidebar from '../components/Sidebar.jsx';
 
 function Dashboard() {
     const avisos = [
@@ -23,7 +22,6 @@ function Dashboard() {
 
     return (
         <div className="flex min-h-screen">
-            <Sidebar />
             
             <Main className="flex-1 bg-white p-6"
                 titulo="Olá, Aluno!" 

@@ -1,11 +1,9 @@
 import Main from "../components/Main";
-import Sidebar from "../components/Sidebar";
 import Tabela from "../components/Tabela";
 
 function Boletos() {
     return (
         <div className="flex h-screen bg-gray-50">
-            <Sidebar />
             <Main 
                 titulo="Meus Boletos" 
                 subtitulo="Histórico de Pagamentos"
