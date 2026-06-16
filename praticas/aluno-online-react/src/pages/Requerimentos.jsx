@@ -1,16 +1,15 @@
 import Main from "../components/Main";
-import Sidebar from "../components/Sidebar";
 import Tabela from "../components/Tabela";
+
 
 function Requerimentos() {
     return (
         <div className="flex h-screen bg-gray-50">
-            <Sidebar />
-            <Main 
-                titulo="Meus Requerimentos" 
+            <Main
+                titulo="Meus Requerimentos"
                 subtitulo="Faça solicitações online para a Secretaria"
             >
-                <Tabela 
+                <Tabela
                     colunas={["Tipo de Requerimento", "Data de Solicitação", "Situação"]}
                     dados={[
                         ["Revisão de Menção", "15/12/2025", "Indeferido"],
@@ -24,5 +23,6 @@ function Requerimentos() {
         </div>
     );
 }
+
 
 export default Requerimentos;
